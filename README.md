@@ -3,9 +3,9 @@ Automation
 
 Folder structure 
 
-PiHome/ 
+PiHome/ structure
 &nbsp;&nbsp;/app.py <br/>
-       /templates --- main.html <br/>
-       /static <br/>
-                /images --- pi_logo.png <br/>
-                /css ---    style.css  <br/>
+&nbsp;&nbsp;/templates --- main.html <br/>
+&nbsp;&nbsp;/static <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/images --- pi_logo.png <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; /css ---    style.css  <br/>
