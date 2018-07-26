@@ -1,12 +1,11 @@
 # Pihome
 Automation
 
-Folder structure 
+Folder structure
 
-PiHome/ 
-
+    PiHome/ 
              /app.py 
              /templates --- main.html 
-                    /static <br/>
+             /static 
                     /images --- pi_logo.png 
                      /css ---    style.css  
