@@ -4,7 +4,7 @@ Automation
 Folder structure 
 
 PiHome/ 
-       /app.py
+&nbsp;&nbsp;/app.py
        /templates --- main.html
        /static
                 /images --- pi_logo.png 
