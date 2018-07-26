@@ -5,9 +5,10 @@ Folder structure
 
 PiHome/ structure 
 
+
 /app.py <br/>
 
-/templates --- main.html <br/>
+          /templates --- main.html <br/>
 
 /static <br/>
 
