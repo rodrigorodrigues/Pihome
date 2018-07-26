@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+    <title> Pi Home </title>
+    <meta name="viewport" content="width=device-with,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+                <script>
+                function sse() {
+                    var source = new EventSource('/stream');
+                    source.onmessage = function(e) {
+                        var out = document.getElementById('out');
+                        out.innerHTML =  '  <li>'+ e.data + '</li>' + out.innerHTML;
+                    };
+                }
+                sse();
+            </script>
+
+
+  </head>
+
+<body>
+
+   <h1>    Pi Home 12  </h1>
+
+
+    <img src="{{ url_for('static', filename = 'images/pi_logo.png') }}" width="200" height="200">
+
+
+
+{#   {% for pin in pins %}#}
+
+   <h2>{{ pins[16].name }}
+   {% if pins[16].state == true %} is currently <strong>on</strong></h2>
+       <div class="row">
+           <div class="col-md-2">
+
+      <a href="/{{16}}/off" class="btn btn-block btn-lg btn-default" role="button">Turn off</a></div></div>
+   {% else %}
+      is currently <strong>off</strong></h2><div class="row"><div class="col-md-2">
+      <a href="/{{16}}/on" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a></div></div>
+   {% endif %}
+
+      <h2>   testing </h2>
+
+         <ul id="out"></ul>
+
+
+
+
+{#    {% endfor %}#}
+
+
+
+
+
+</body>
+</html>
