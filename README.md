@@ -3,7 +3,7 @@ Automation
 
 Folder structure 
 
-PiHome/ structure
+PiHome/ structure <br/>
 &nbsp;&nbsp;/app.py <br/>
 &nbsp;&nbsp;/templates --- main.html <br/>
 &nbsp;&nbsp;/static <br/>
